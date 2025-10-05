@@ -1,3 +1,6 @@
+import time
+
+
 def logo_menu():
     builded_menu = r"""  
  _____                                                                                                                _____ 
@@ -53,3 +56,22 @@ def logo_menu():
  |___|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|___| 
 (_____)                                                                                                              (_____)"""
     print(builded_menu)
+    print()
+    print()
+
+
+def initial_history():
+    intro = [
+        "No coração de um mundo esquecido, onde reis e magos travaram batalhas há muito tempo,",
+        "restam apenas ruínas... e mistérios.\n",
+        "Você desperta em meio à escuridão, sem lembrar como chegou ali.",
+        "A única pista é uma antiga inscrição gravada na pedra:\n",
+        "\"Aquele que dominar a Força do Terminal será o guardião do equilíbrio... ou o seu destruidor.\"\n",
+        "Diante de você, um caminho se abre.",
+        "Criaturas sombrias guardam os segredos desse lugar.",
+        "Sua jornada está prestes a começar...\n"
+    ]
+
+    for linha in intro:
+        print(linha)
+        time.sleep(1.5)
